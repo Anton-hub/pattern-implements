@@ -7,9 +7,11 @@ public class Test {
     }
 
     private static void testFactory(AbstractFactory factory) {
+        //Инициализация продуктов с помощью фабрики
         AbstractProductA aProduct = factory.createProductA();
         AbstractProductB bProduct = factory.createProductB();
 
+        //Вызов метода конкретного продукта определенный в фабрике
         aProduct.printALabel();
         bProduct.printBLabel();
     }
